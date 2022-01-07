@@ -6,12 +6,36 @@ class Item {
   final String colour;
   final String imageUrl;
 
-  Item(this.id, this.name, this.desc, this.price, this.colour, this.imageUrl);
+  factory Item.forMap(Map<String, dynamic> map) {
+    print(map["id"]);
+    return Item(
+      id: map["id"],
+      name: map["name"],
+      desc: map["desc"],
+      price: map["price"],
+      colour: map["colour"],
+      imageUrl: map["imageUrl"],
+    );
+  }
+
+  toMap() => {
+        "id": id,
+        "name": name,
+        "desc": desc,
+        "price": price,
+        "colour": colour,
+        "imageUrl": imageUrl,
+      };
+
+  Item(
+      {required this.id,
+      required this.name,
+      required this.desc,
+      required this.price,
+      required this.colour,
+      required this.imageUrl});
 }
 
 class CatalogModel {
-  static final items = [
-    Item(1, "iPhone 12 pro", "Apple iPhone 12 pro desc", 100, "#112233",
-        "https://m.media-amazon.com/images/I/41+2tWGDs3L._AC_SY679_.jpg")
-  ];
+  static List<Item> items = [];
 }

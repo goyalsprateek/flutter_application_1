@@ -1,0 +1,36 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Iphone 4",
+            "desc": "This is desc",
+            "price": 999,
+            "colour": "#121212",
+            "imageUrl": "Test"
+        },
+        {
+            "id": 2,
+            "name": "Iphone 12",
+            "desc": "This is desc",
+            "price": 999,
+            "colour": "#121212",
+            "imageUrl": "imageUrl"
+        },
+        {
+            "id": 3,
+            "name": "Iphone 13 pro max",
+            "desc": "This is desc",
+            "price": 999,
+            "colour": "#121212",
+            "imageUrl": "imageUrl"
+        },
+        {
+            "id": 4,
+            "name": "Samsung 4",
+            "desc": "This is desc",
+            "price": 999,
+            "colour": "#121212",
+            "imageUrl": "imageUrl"
+        }
+    ]
+}

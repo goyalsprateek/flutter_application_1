@@ -15,7 +15,8 @@ class ItemWidget extends StatelessWidget {
         },
         leading: Image.network(item.imageUrl),
         title: Text(item.name),
-        subtitle: Text(item.desc),
+        subtitle: Text("${item.desc} \n${item.desc}"),
+        isThreeLine: true,
         trailing: Text(
           "\$${item.price.toString()}",
           textScaleFactor: 1.3,
